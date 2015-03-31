@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0181C81ABA0B2500B8D0D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7644FD1AB869D90078CBA4 /* MapKit.framework */; };
+		1F08AF1A1AB6F0C70001B2AE /* ThirdCampusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08AF191AB6F0C70001B2AE /* ThirdCampusViewController.m */; };
+		1F08AF1D1AB6F0E40001B2AE /* FourthCampusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F08AF1C1AB6F0E40001B2AE /* FourthCampusViewController.m */; };
+		1F2D36A21AB757A200C5C36B /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D36A11AB757A200C5C36B /* Request.m */; };
 		1F47CCD91AAC8CB000BFAEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F47CCD81AAC8CB000BFAEBB /* main.m */; };
 		1F47CCDC1AAC8CB000BFAEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F47CCDB1AAC8CB000BFAEBB /* AppDelegate.m */; };
 		1F47CCDF1AAC8CB000BFAEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F47CCDE1AAC8CB000BFAEBB /* ViewController.m */; };
@@ -14,6 +18,13 @@
 		1F47CCE41AAC8CB000BFAEBB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F47CCE31AAC8CB000BFAEBB /* Images.xcassets */; };
 		1F47CCE71AAC8CB000BFAEBB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F47CCE51AAC8CB000BFAEBB /* LaunchScreen.xib */; };
 		1F47CCF31AAC8CB000BFAEBB /* Supinfo_CompassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F47CCF21AAC8CB000BFAEBB /* Supinfo_CompassTests.m */; };
+		1F7644FF1AB86EAB0078CBA4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7644FD1AB869D90078CBA4 /* MapKit.framework */; };
+		1F9722E11AAC987E0006B2E0 /* GeoPointCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9722E01AAC987E0006B2E0 /* GeoPointCompass.m */; };
+		1F9722E41AAC98C80006B2E0 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9722E31AAC98C80006B2E0 /* arrow.png */; };
+		1F9722EA1AACA82F0006B2E0 /* ManagerCampus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9722E91AACA82F0006B2E0 /* ManagerCampus.m */; };
+		1F9722ED1AACA8410006B2E0 /* Campus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9722EC1AACA8410006B2E0 /* Campus.m */; };
+		1FA7B3101AB4401B00646ED8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F887C1E1AACADF800FE5996 /* CoreLocation.framework */; };
+		1FE1BF281AB87BF10010E6E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F887C1E1AACADF800FE5996 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F08AF181AB6F0C70001B2AE /* ThirdCampusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdCampusViewController.h; sourceTree = "<group>"; };
+		1F08AF191AB6F0C70001B2AE /* ThirdCampusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdCampusViewController.m; sourceTree = "<group>"; };
+		1F08AF1B1AB6F0E40001B2AE /* FourthCampusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthCampusViewController.h; sourceTree = "<group>"; };
+		1F08AF1C1AB6F0E40001B2AE /* FourthCampusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthCampusViewController.m; sourceTree = "<group>"; };
+		1F2D36A01AB757A200C5C36B /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		1F2D36A11AB757A200C5C36B /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		1F47CCD31AAC8CB000BFAEBB /* Supinfo Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Supinfo Compass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F47CCD71AAC8CB000BFAEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F47CCD81AAC8CB000BFAEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +57,16 @@
 		1F47CCEC1AAC8CB000BFAEBB /* Supinfo CompassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Supinfo CompassTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F47CCF11AAC8CB000BFAEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F47CCF21AAC8CB000BFAEBB /* Supinfo_CompassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Supinfo_CompassTests.m; sourceTree = "<group>"; };
+		1F7644FD1AB869D90078CBA4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F887C1E1AACADF800FE5996 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1F9722DF1AAC987E0006B2E0 /* GeoPointCompass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoPointCompass.h; sourceTree = "<group>"; };
+		1F9722E01AAC987E0006B2E0 /* GeoPointCompass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoPointCompass.m; sourceTree = "<group>"; };
+		1F9722E31AAC98C80006B2E0 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		1F9722E81AACA82F0006B2E0 /* ManagerCampus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerCampus.h; sourceTree = "<group>"; };
+		1F9722E91AACA82F0006B2E0 /* ManagerCampus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerCampus.m; sourceTree = "<group>"; };
+		1F9722EB1AACA8410006B2E0 /* Campus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campus.h; sourceTree = "<group>"; };
+		1F9722EC1AACA8410006B2E0 /* Campus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campus.m; sourceTree = "<group>"; };
+		353F1A22D372E62F569099E5 /* libPods-Supinfo Compass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Supinfo Compass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0181C81ABA0B2500B8D0D1 /* MapKit.framework in Frameworks */,
+				1FA7B3101AB4401B00646ED8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE1BF281AB87BF10010E6E7 /* CoreLocation.framework in Frameworks */,
+				1F7644FF1AB86EAB0078CBA4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +97,7 @@
 				1F47CCD51AAC8CB000BFAEBB /* Supinfo Compass */,
 				1F47CCEF1AAC8CB000BFAEBB /* Supinfo CompassTests */,
 				1F47CCD41AAC8CB000BFAEBB /* Products */,
+				AD889C56E56727E8B1C0F924 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +113,12 @@
 		1F47CCD51AAC8CB000BFAEBB /* Supinfo Compass */ = {
 			isa = PBXGroup;
 			children = (
+				1F9722E71AACA7860006B2E0 /* Models */,
+				1F9722E61AACA7690006B2E0 /* Controllers */,
+				1F9722E51AACA7640006B2E0 /* Classes */,
+				1F9722DE1AAC983D0006B2E0 /* Libraries */,
 				1F47CCDA1AAC8CB000BFAEBB /* AppDelegate.h */,
 				1F47CCDB1AAC8CB000BFAEBB /* AppDelegate.m */,
-				1F47CCDD1AAC8CB000BFAEBB /* ViewController.h */,
-				1F47CCDE1AAC8CB000BFAEBB /* ViewController.m */,
 				1F47CCE01AAC8CB000BFAEBB /* Main.storyboard */,
 				1F47CCE31AAC8CB000BFAEBB /* Images.xcassets */,
 				1F47CCE51AAC8CB000BFAEBB /* LaunchScreen.xib */,
@@ -117,6 +151,67 @@
 				1F47CCF11AAC8CB000BFAEBB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F9722DE1AAC983D0006B2E0 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1F9722E21AAC98B10006B2E0 /* GeoPointCompass */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		1F9722E21AAC98B10006B2E0 /* GeoPointCompass */ = {
+			isa = PBXGroup;
+			children = (
+				1F9722E31AAC98C80006B2E0 /* arrow.png */,
+				1F9722DF1AAC987E0006B2E0 /* GeoPointCompass.h */,
+				1F9722E01AAC987E0006B2E0 /* GeoPointCompass.m */,
+			);
+			name = GeoPointCompass;
+			sourceTree = "<group>";
+		};
+		1F9722E51AACA7640006B2E0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F9722E81AACA82F0006B2E0 /* ManagerCampus.h */,
+				1F9722E91AACA82F0006B2E0 /* ManagerCampus.m */,
+				1F2D36A01AB757A200C5C36B /* Request.h */,
+				1F2D36A11AB757A200C5C36B /* Request.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1F9722E61AACA7690006B2E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F47CCDD1AAC8CB000BFAEBB /* ViewController.h */,
+				1F47CCDE1AAC8CB000BFAEBB /* ViewController.m */,
+				1F08AF181AB6F0C70001B2AE /* ThirdCampusViewController.h */,
+				1F08AF191AB6F0C70001B2AE /* ThirdCampusViewController.m */,
+				1F08AF1B1AB6F0E40001B2AE /* FourthCampusViewController.h */,
+				1F08AF1C1AB6F0E40001B2AE /* FourthCampusViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F9722E71AACA7860006B2E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F9722EB1AACA8410006B2E0 /* Campus.h */,
+				1F9722EC1AACA8410006B2E0 /* Campus.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD889C56E56727E8B1C0F924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F7644FD1AB869D90078CBA4 /* MapKit.framework */,
+				1F887C1E1AACADF800FE5996 /* CoreLocation.framework */,
+				353F1A22D372E62F569099E5 /* libPods-Supinfo Compass.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +263,12 @@
 				TargetAttributes = {
 					1F47CCD21AAC8CB000BFAEBB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 5V82G98JUM;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					1F47CCEB1AAC8CB000BFAEBB = {
 						CreatedOnToolsVersion = 6.2;
@@ -202,6 +303,7 @@
 				1F47CCE21AAC8CB000BFAEBB /* Main.storyboard in Resources */,
 				1F47CCE71AAC8CB000BFAEBB /* LaunchScreen.xib in Resources */,
 				1F47CCE41AAC8CB000BFAEBB /* Images.xcassets in Resources */,
+				1F9722E41AAC98C80006B2E0 /* arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F47CCDF1AAC8CB000BFAEBB /* ViewController.m in Sources */,
+				1F08AF1A1AB6F0C70001B2AE /* ThirdCampusViewController.m in Sources */,
 				1F47CCDC1AAC8CB000BFAEBB /* AppDelegate.m in Sources */,
 				1F47CCD91AAC8CB000BFAEBB /* main.m in Sources */,
+				1F08AF1D1AB6F0E40001B2AE /* FourthCampusViewController.m in Sources */,
+				1F9722EA1AACA82F0006B2E0 /* ManagerCampus.m in Sources */,
+				1F9722ED1AACA8410006B2E0 /* Campus.m in Sources */,
+				1F9722E11AAC987E0006B2E0 /* GeoPointCompass.m in Sources */,
+				1F2D36A21AB757A200C5C36B /* Request.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +453,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_LOCATION = YES;
 				INFOPLIST_FILE = "Supinfo Compass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/Rico/Downloads/libisimulate-3.x-1.5-20100925",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c1c35c83-0c82-4d54-93d6-f6949ab36c72";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,9 +474,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_LOCATION = YES;
 				INFOPLIST_FILE = "Supinfo Compass/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/Rico/Downloads/libisimulate-3.x-1.5-20100925",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c1c35c83-0c82-4d54-93d6-f6949ab36c72";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -374,6 +504,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Supinfo CompassTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Supinfo Compass.app/Supinfo Compass";
@@ -389,6 +520,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Supinfo CompassTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Supinfo Compass.app/Supinfo Compass";
@@ -414,6 +546,7 @@
 				1F47CCF81AAC8CB000BFAEBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F47CCF91AAC8CB000BFAEBB /* Build configuration list for PBXNativeTarget "Supinfo CompassTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +555,7 @@
 				1F47CCFB1AAC8CB000BFAEBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
