@@ -18,10 +18,6 @@
 
 @property (nonatomic, retain) UIImageView *arrowImageView;
 
-@property (nonatomic) CLLocationDegrees latitudeOfTargetedPoint;
-
-@property (nonatomic) CLLocationDegrees longitudeOfTargetedPoint;
-
 @property (nonatomic, retain) Campus* targetCampus;
 
 @property (nonatomic, retain) ManagerCampus* manageCampus;

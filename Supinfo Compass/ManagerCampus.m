@@ -24,24 +24,28 @@
     // Get class request
     Request *cls_Request = [[Request alloc] init];
     
-    NSArray *campuses = [cls_Request getDataByUrl:@"http://dev.api-campus.com/api/campus/all"];
+    NSArray *campuses = [cls_Request getDataByUrl:@"http://api-supinfo.aymericdaurelle.ovh/api/campus/all"];
     
     // Iterate through the object and print desired results
     for(NSObject *st in campuses) {
+        
         // Localisation
         NSObject *localisation = [st valueForKey:@"localisation"];
         float lat = [[localisation valueForKey:@"lat"] floatValue];
         float lng = [[localisation valueForKey:@"lng"] floatValue];
+        
         // Adresse
         NSObject *address = [st valueForKey:@"address"];
         NSString *rue = [address valueForKey:@"rue"];
         int postalCode = [[address valueForKey:@"codepostale"] intValue];
         NSString *ville = [address valueForKey:@"ville"];
+        
         // Campus
         NSString *campusName = [st valueForKey:@"name"];
         int Id = [[st valueForKey:@"id"] intValue];
         Campus *campus = [[Campus alloc] initWithId:Id WithName:campusName withStreet:rue withPostalCode:postalCode withTown:ville withLat:lat withLng:lng];
         NSLog(@"Lat campus %@ : %f", [campus campusName] ,[campus campusLat]);
+        
         // Add campus to list campus
         [self.listCampus addObject:campus];
     }
@@ -53,8 +57,10 @@
 {
     [self getAllCampus];
     CLLocation *curentLocation = LocationManager.location;
+    
     // Construct Dictionary location
     NSDictionary *locations = [[NSMutableDictionary alloc] init];
+    
     // Get distance bettewn all campus and a it to a array to get arrow location
     for(Campus *campus in self.listCampus){
         CLLocation *campusLocation = [[CLLocation alloc] initWithLatitude:[campus campusLat] longitude:[campus campusLng]];

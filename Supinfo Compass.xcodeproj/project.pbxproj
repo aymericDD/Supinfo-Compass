@@ -100,6 +100,7 @@
 				AD889C56E56727E8B1C0F924 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		1F47CCD41AAC8CB000BFAEBB /* Products */ = {
 			isa = PBXGroup;

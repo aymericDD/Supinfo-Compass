@@ -25,6 +25,7 @@ static NSString *CellIdentifier = @"CampusCell";
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Get cell and changes its labels value
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"Supinfo %@", [[self.listCampus objectAtIndex:[indexPath row]] campusName] ];
     cell.detailTextLabel.text = [[self.listCampus objectAtIndex:[indexPath row]] campusRue];
@@ -38,6 +39,7 @@ static NSString *CellIdentifier = @"CampusCell";
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    // Count campuses
     return [self.listCampus count];
 }
 
@@ -55,13 +57,15 @@ static NSString *CellIdentifier = @"CampusCell";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Get main story board for get FourthCampusViewController
     UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
     FourthCampusViewController *fourthVC = (FourthCampusViewController*)[mainStoryBoard instantiateViewControllerWithIdentifier:@"FourthCampusViewController"];
     
+    // Set campus values into labels
     [fourthVC setTitle:[[self.listCampus objectAtIndex:[indexPath row]] campusName]];
     [fourthVC setCampus:[self.listCampus objectAtIndex:[indexPath row]]];
     
+    // Show view
     [self.navigationController pushViewController:fourthVC animated:YES];
 }
 

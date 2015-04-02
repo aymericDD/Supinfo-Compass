@@ -55,8 +55,8 @@ float angle;
     float userLocationLatitude = DegreesToRadians(userlocation.coordinate.latitude);
     float userLocationLongitude = DegreesToRadians(userlocation.coordinate.longitude);
     
-    float targetedPointLatitude = DegreesToRadians(self.latitudeOfTargetedPoint);
-    float targetedPointLongitude = DegreesToRadians(self.longitudeOfTargetedPoint);
+    float targetedPointLatitude = DegreesToRadians(self.targetCampus.campusLat);
+    float targetedPointLongitude = DegreesToRadians(self.targetCampus.campusLng);
     
     float longitudeDifference = targetedPointLongitude - userLocationLongitude;
     
@@ -114,7 +114,9 @@ float angle;
     NSLog(@"new Location : %@",[newLocation description]);
     angle = [self calculateAngle:newLocation];
     self.targetCampus = [self.manageCampus getNearestCampusWithManager:self.locationManager];
-    [self getHeadingForDirection];// Remove this line on real device
+    if ([CLLocationManager headingAvailable] == NO) {
+        [self getHeadingForDirection];// Remove this line on real device
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -129,10 +131,10 @@ float angle;
     
     // !!!! OVERRIDE
     CLLocation *startLocation = manager.location;
-    CLLocation *endLocation = [[CLLocation alloc] initWithLatitude:self.latitudeOfTargetedPoint longitude:self.longitudeOfTargetedPoint];
+    CLLocation *endLocation = [[CLLocation alloc] initWithLatitude:self.targetCampus.campusLat longitude:self.targetCampus.campusLng];
     CLLocationDistance distance = [startLocation distanceFromLocation:endLocation];
     self.nameCampusLabel.text = [self.targetCampus campusName];
-    self.distanceCampusLabel.text = [NSString stringWithFormat:@"%f", distance];
+    self.distanceCampusLabel.text = [NSString stringWithFormat:@"%@ km", [[NSNumber numberWithFloat:(distance)] stringValue]];
     // !!!! END - OVERRIDE
     
     float direction = newHeading.magneticHeading;
@@ -178,7 +180,7 @@ float angle;
     CLLocation *endLocation = [[CLLocation alloc] initWithLatitude:self.targetCampus.campusLat longitude:self.targetCampus.campusLng];
     CLLocationDistance distance = [startLocation distanceFromLocation:endLocation] / 1000.f;
     self.nameCampusLabel.text = [self.targetCampus campusName];
-    self.distanceCampusLabel.text = [[NSNumber numberWithFloat:(distance)] stringValue];
+    self.distanceCampusLabel.text = [NSString stringWithFormat:@"%.2f km", distance];
     // !!!! END - OVERRIDE
     
     angle = [self calculateAngle:currentLocation];

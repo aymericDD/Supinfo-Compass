@@ -12,6 +12,7 @@
 
 -(void) viewWillAppear:(BOOL)animated
 {
+    // Create coordinate for map
     CLLocationCoordinate2D poiCoordinate;
     poiCoordinate.latitude = [self.campus campusLat];
     poiCoordinate.longitude = [self.campus campusLng];

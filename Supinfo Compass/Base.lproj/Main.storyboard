@@ -45,8 +45,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="KPR-Jy-cIB">
             <objects>
-                <tabBarController id="lYn-PR-dcA" sceneMemberID="viewController">
+                <tabBarController autoresizesArchivedViewToFullSize="NO" id="lYn-PR-dcA" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vvY-00-5Gl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
